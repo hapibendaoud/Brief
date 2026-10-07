@@ -43,11 +43,9 @@ a {
 
 .form{
   display: flex;
-  margin: 100px;
-  padding: 60px;
   background-color: #cdcdcd5f;
-  border: 1px solid #8490a1 ;
   border-radius: 20px;
+  margin: 40px;
 }
 .titleForm{
   display: flex;
@@ -62,22 +60,22 @@ a {
   align-items: end;
   font-weight: 800;
 }
-.input{
+.inputDiv{
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 50px 10px 50px 190px;
 }
-input{
+.inputs{
   border: 1px;
-  border: #394556;
+  border: none;
   border-radius: 10px;
-  margin-bottom: 44px;
-  margin-left: 10px;
-  height: 30px;
-  width: 500px;
-  /* background-color: #e89d6f; */
+  padding: 10px;
+  margin-bottom: 30px;
 }
-input:focus{
+input:focus {
+  outline: none;
   border: none;
 }
 label{
@@ -89,11 +87,39 @@ label{
   border-radius: 10px;
   margin-left: 10px;
 }
+
+.btn{
+  height: 40px;
+  background-color: #ff9500;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border: #545f6f;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: #ffba59;
+}
 .mainContact{
   display: flex;
   flex-direction: column;
   width: 100%;
   height: fit-content;
+}
+.maping{
+  padding: 30px;
+}
+iframe{
+  width: 600px;
+  height: 450px;
+}
+.contact{
+  display: flex ;
+  justify-content: space-around;
+  padding: 20px 0px 0px 0px;
+}
+  span{
+  color: ff9500;
 }
 
 ul {
@@ -614,4 +640,71 @@ button:focus-visible {
   margin-top: 24px;
   font-size: 13px;
   color: #94A3B8;
+}
+
+
+@media (max-width:500px) {
+  body { 
+    background-color: lightblue; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .hero{
+    padding: 0px;
+  }
+  .hero-image{
+    height: 500px;
+  }
+  main{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0 10px 0;
+  }
+  .form{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputDiv{
+    width: 100%;
+    padding: 0px 30px;
+  }
+  iframe{
+    width: 100%;
+    height: 250px;
+  }
+  .titleForm{
+    width: 100%;
+    font-size: large;
+  }
+  .menu{
+    display: none;
+  }
+  .hero-contenu{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .boutons{
+    display: flex;
+    flex-direction: column  ;
+  }
+  .cartes{
+    display: flex;
+    flex-direction: column;
+  }
+  .pied-de-page{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  /* footer{
+    padding: 0px;
+    margin: 0px;
+  } */
+
 }
