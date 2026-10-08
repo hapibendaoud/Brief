@@ -15,11 +15,13 @@ body {
   color: #1F2937;
   background-color: #F7F8FA;
 }
+.menu-icon{
+  display: none;
+}
 
 .logo{
   width: 93px;
   height: auto;
-
 }
 
 .logoName{
@@ -87,6 +89,13 @@ label{
   border-radius: 10px;
   margin-left: 10px;
 }
+.checkbox{
+  font-size: 50px;
+  display: none;
+}
+#menu-toggle{
+  display: none;
+}
 
 .btn{
   height: 40px;
@@ -107,11 +116,13 @@ label{
   height: fit-content;
 }
 .maping{
+  width: 100%;
   padding: 30px;
 }
 iframe{
-  width: 600px;
+  width: 100%;
   height: 450px;
+  border-radius: 20px;
 }
 .contact{
   display: flex ;
@@ -142,6 +153,7 @@ button:focus-visible {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+  overflow: hidden;
 }
 
 .section {
@@ -276,14 +288,14 @@ button:focus-visible {
   color: #0F1B2D;
 } */
 
-.logo::after {
+/* .logo::after {
   content: "";
   width: 10px;
   height: 10px;
   margin-left: 8px;
   background-color: #FF6B2C;
   border-radius: 50%;
-}
+} */
 
 .menu {
   display: flex;
@@ -643,13 +655,53 @@ button:focus-visible {
 }
 
 
-@media (max-width:500px) {
+@media (max-width:600px) {
   body { 
-    background-color: lightblue; 
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100vh;
+  }
+.menu-icon{
+  display: block;
+  font-size: 40px;
+  margin: 0;
+  padding: 0 12px 0 12px;
+  cursor: pointer;
+}
+.checkbox{
+  display: block;
+}
+.menu-icon:hover{
+  background-color: #d6d8dc;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+
+}
+.nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* نفس ارتفاع الهيدر */
+    right: 0;
+    width: 100%;
+    background-color: #ffefdf;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 99;
+  }
+#menu-toggle:checked ~ .nav-wrapper  {
+    display: flex;
+  }
+  .logo{
+    width: 90px;
+    height: auto;
+  }
+  .logoName{
+    font-size: 30px;
   }
   .hero{
     padding: 0px;
@@ -663,14 +715,14 @@ button:focus-visible {
     padding: 10px 0 10px 0;
   }
   .form{
-    margin: 0px;
+    margin: 30px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   .inputDiv{
     width: 100%;
-    padding: 0px 30px;
+    padding: 50px 30px;
   }
   iframe{
     width: 100%;
@@ -680,9 +732,9 @@ button:focus-visible {
     width: 100%;
     font-size: large;
   }
-  .menu{
+  /* .menu{
     display: none;
-  }
+  } */
   .hero-contenu{
     width: 100%;
     height: fit-content;
@@ -706,5 +758,42 @@ button:focus-visible {
     padding: 0px;
     margin: 0px;
   } */
+
+}
+@media (max-width:900px) and (min-width:600px) {
+  .cartes{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+  .logo{
+    width: 70px;
+    height: auto;
+  }
+  .logoName{
+    font-size: 30px;
+  }
+    main{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0 10px 0;
+  }
+  .form{
+    margin: 30px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputDiv{
+    width: 100%;
+    padding: 50px 70px;
+  }
+  iframe{
+    width: 100%;
+    height: 250px;
+  }
+  .titleForm{
+    width: 100%;
+    font-size: large;
+  }
 
 }
