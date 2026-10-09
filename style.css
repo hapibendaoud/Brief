@@ -23,6 +23,15 @@ body {
   width: 93px;
   height: auto;
 }
+.heroZoom:hover{
+  transform: scale(1.01);
+}
+.zoom{
+  transition: transform 0.3s ease-in-out;
+}
+.zoom:hover{
+  transform: scale(1.1);
+}
 
 .logoName{
   display: flex;
@@ -361,6 +370,7 @@ button:focus-visible {
   border-radius: 16px;
   border: 1px solid #E5E7EB;
   box-shadow: 0 10px 25px rgba(15, 27, 45, 0.15);
+  transition: transform 0.2s ease-in-out;
 }
 
 .chiffres {
@@ -754,10 +764,7 @@ button:focus-visible {
     flex-direction: column;
     margin: 0;
   }
-  /* footer{
-    padding: 0px;
-    margin: 0px;
-  } */
+
 
 }
 @media (max-width:900px) and (min-width:600px) {
@@ -794,6 +801,9 @@ button:focus-visible {
   .titleForm{
     width: 100%;
     font-size: large;
+  }
+  .mainContact{
+    padding: 30px;
   }
 
 }

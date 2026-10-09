@@ -13,15 +13,18 @@
 <body>
     <header class="en-tete">
         <div class="conteneur en-tete-contenu">
-            <a href="/index.html" class="logoName"><img src="/img/logo.png" class="logo" alt="Logo">ARNOLD</a>
-            <nav aria-label="Navigation principale">
-                <ul class="menu">
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="/Apropos.html">À propos</a></li>
-                <li><a href="#programmes" class="lien-actif">Programmes</a></li>
-                <li><a href="/contact.html">Contact-nous</a></li>
-                </ul>
-            </nav>
+        <a href="/index.html" class="logoName"><img src="/img/logo.png" class="logo" alt="Logo">ARNOLD</a>
+            <input type="checkbox" id="menu-toggle" class="checkbox">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav aria-label="Navigation principale" class="nav-wrapper">
+            <ul class="menu">
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/Apropos.html">À propos</a></li>
+            <li><a href="#programmes.html" class="lien-actif">Programmes</a></li>
+            <li><a href="/contact.html" >Contact-nous</a></li>
+            </ul>
+        </nav>
+
         </div>
     </header>
 
@@ -35,8 +38,8 @@
 
                 <div class="cartes">
 
-                    <article class="carte carte-programme">
-                        <img src="img/musculation.jpg" alt="Une sportive soulève des haltères dans l'espace musculation">
+                    <article class="carte carte-programme scrolling">
+                        <img class="zoom" src="img/musculation.jpg" alt="Une sportive soulève des haltères dans l'espace musculation">
                         <div class="programme-corps">
                         <span class="etiquette etiquette-orange">Tous niveaux</span>
                         <h3>Musculation</h3>
@@ -46,7 +49,7 @@
                     </article>
 
                     <article class="carte carte-programme">
-                        <img src="img/yoga.jpg" alt="Un groupe pratique le yoga sur des tapis dans une salle lumineuse">
+                        <img class="zoom" src="img/yoga.jpg" alt="Un groupe pratique le yoga sur des tapis dans une salle lumineuse">
                         <div class="programme-corps">
                         <span class="etiquette etiquette-bleue">Débutant</span>
                         <h3>Yoga</h3>
@@ -56,7 +59,7 @@
                     </article>
 
                     <article class="carte carte-programme">
-                        <img src="img/cardio.jpg" alt="Des sportifs suivent un circuit de cardio training avec des kettlebells">
+                        <img class="zoom" src="img/cardio.jpg" alt="Des sportifs suivent un circuit de cardio training avec des kettlebells">
                         <div class="programme-corps">
                         <span class="etiquette etiquette-verte">Intermédiaire</span>
                         <h3>Cardio training</h3>
@@ -66,7 +69,7 @@
                     </article>
 
                     <article class="carte carte-programme">
-                        <img src="img/boxe.jpg" alt="Une sportive frappe un sac de frappe pendant un cours de boxe fitness">
+                        <img class="zoom" src="img/boxe.jpg" alt="Une sportive frappe un sac de frappe pendant un cours de boxe fitness">
                         <div class="programme-corps">
                         <span class="etiquette etiquette-verte">Intermédiaire</span>
                         <h3>Boxe fitness</h3>
@@ -79,49 +82,49 @@
 
                 <div class="formules">
 
-                <div class="section-titre">
-                    <h3>Nos formules</h3>
-                    <p>Des abonnements flexibles adaptés à vos envies et objectifs</p>
-                </div>
+                    <div class="section-titre">
+                        <h3>Nos formules</h3>
+                        <p>Des abonnements flexibles adaptés à vos envies et objectifs</p>
+                    </div>
 
-                <div class="cartes">
+                    <div class="cartes">
 
-                    <article class="carte formule">
-                    <h4>Essentiel</h4>
-                    <p class="prix">250 MAD <span>/ mois</span></p>
-                    <ul class="formule-liste">
-                        <li>Accès à la salle</li>
-                        <li>2 cours collectifs par semaine</li>
-                        <li>Sans engagement</li>
-                    </ul>
-                    <a href="#contact" class="bouton bouton-secondaire">Choisir</a>
-                    </article>
+                        <article class="carte formule">
+                        <h4>Essentiel</h4>
+                        <p class="prix">250 MAD <span>/ mois</span></p>
+                        <ul class="formule-liste">
+                            <li>Accès à la salle</li>
+                            <li>2 cours collectifs par semaine</li>
+                            <li>Sans engagement</li>
+                        </ul>
+                        <a href="#contact" class="bouton bouton-secondaire">Choisir</a>
+                        </article>
 
-                    <article class="carte formule formule-populaire">
-                    <p class="badge-populaire">Populaire</p>
-                    <h4>Premium</h4>
-                    <p class="prix">400 MAD <span>/ mois</span></p>
-                    <ul class="formule-liste">
-                        <li>Accès à la salle</li>
-                        <li>Cours collectifs illimités</li>
-                        <li>1 bilan avec un coach</li>
-                    </ul>
-                    <a href="#contact" class="bouton bouton-principal">Choisir</a>
-                    </article>
+                        <article class="carte formule formule-populaire">
+                        <p class="badge-populaire">Populaire</p>
+                        <h4>Premium</h4>
+                        <p class="prix">400 MAD <span>/ mois</span></p>
+                        <ul class="formule-liste">
+                            <li>Accès à la salle</li>
+                            <li>Cours collectifs illimités</li>
+                            <li>1 bilan avec un coach</li>
+                        </ul>
+                        <a href="#contact" class="bouton bouton-principal">Choisir</a>
+                        </article>
 
-                    <article class="carte formule">
-                    <h4>Duo</h4>
-                    <p class="prix">650 MAD <span>/ mois</span></p>
-                    <p class="prix-note">pour 2 personnes</p>
-                    <ul class="formule-liste">
-                        <li>Accès à la salle pour deux</li>
-                        <li>Cours collectifs illimités</li>
-                        <li>Sans engagement</li>
-                    </ul>
-                    <a href="#contact" class="bouton bouton-secondaire">Choisir</a>
-                    </article>
+                        <article class="carte formule">
+                        <h4>Duo</h4>
+                        <p class="prix">650 MAD <span>/ mois</span></p>
+                        <p class="prix-note">pour 2 personnes</p>
+                        <ul class="formule-liste">
+                            <li>Accès à la salle pour deux</li>
+                            <li>Cours collectifs illimités</li>
+                            <li>Sans engagement</li>
+                        </ul>
+                        <a href="#contact" class="bouton bouton-secondaire">Choisir</a>
+                        </article>
 
-                </div>
+                    </div>
                 </div>
 
             </div>
@@ -138,9 +141,10 @@
 
             <nav aria-label="Navigation du pied de page">
             <ul class="menu menu-pied">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#programmes">Programmes</a></li>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/Apropos.html">À propos</a></li>
+                <li><a href="#programmes.html">Programmes</a></li>
+                <li><a href="/contact.html">Contact-nous</a></li>
             </ul>
             </nav>
         </div>
