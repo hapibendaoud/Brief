@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+  :root{
+    --nav-bg: white;
+    --nav-text: rgb(20, 4, 66);
+    --p-text: rgb(3, 1, 26);
+    --bg-main: white;
+    --text-main: rgb(20, 4, 66);
+    --card-bg: #FFFFFF;
+    --card-border: rgb(240, 238, 248);
+}
 
 html {
   scroll-behavior: smooth;
@@ -12,8 +21,8 @@ body {
   font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #1F2937;
-  background-color: #F7F8FA;
+  color: var(--text-main);
+  background-color: var(--bg-main);
 }
 .menu-icon{
   display: none;
@@ -39,7 +48,8 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 50px;
   font-weight: 900;
-  color: #0F1B2D;
+  /* color: #0F1B2D; */
+  color: var(--nav-text);
 }
 
 h1, h2, h3, h4 {
@@ -162,7 +172,6 @@ button:focus-visible {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  overflow: hidden;
 }
 
 .section {
@@ -170,7 +179,7 @@ button:focus-visible {
 }
 
 .section-blanche {
-  background-color: #FFFFFF;
+  background-color: var(--bg-main);
   border-top: 1px solid #E5E7EB;
   border-bottom: 1px solid #E5E7EB;
 }
@@ -184,15 +193,17 @@ button:focus-visible {
 .section-titre h2 {
   font-size: 32px;
   margin-bottom: 16px;
+  color: var(--nav-text);
 }
 
 .section-titre h3 {
   font-size: 26px;
   margin-bottom: 12px;
+  color: var(--nav-text);
 }
 
 .section-titre p {
-  color: #4B5563;
+  color: var(--p-text);
 }
 
 .sur-titre {
@@ -202,6 +213,7 @@ button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
+
 }
 
 .bouton {
@@ -241,8 +253,8 @@ button:focus-visible {
 
 .carte {
   flex: 1;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E7EB;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
 }
@@ -277,8 +289,8 @@ button:focus-visible {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #E5E7EB;
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-bg);
 }
 
 .en-tete-contenu {
@@ -287,24 +299,6 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
 }
-
-/* .logo {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #0F1B2D;
-} */
-
-/* .logo::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  margin-left: 8px;
-  background-color: #FF6B2C;
-  border-radius: 50%;
-} */
 
 .menu {
   display: flex;
@@ -315,12 +309,19 @@ button:focus-visible {
   font-weight: 500;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
+  color: var(--nav-text);
 }
 
 .menu a:hover {
   color: #FF6B2C;
 }
 
+.titleForm{
+  color: var(--nav-text);
+}
+span{
+  color: #FF6B2C;
+}
 .menu .lien-actif {
   color: #FF6B2C;
   font-weight: 600;
@@ -335,6 +336,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 32px;
+  color: var(--nav-text);
 }
 
 .hero-texte {
@@ -346,13 +348,14 @@ button:focus-visible {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 24px;
+    color: var(--nav-text);
 }
 
 .hero-description {
   max-width: 520px;
   font-size: 18px;
   line-height: 1.6;
-  color: #4B5563;
+  color: var(--p-text);
   margin-bottom: 32px;
 }
 
@@ -377,8 +380,8 @@ button:focus-visible {
   display: flex;
   margin-top: 64px;
   padding: 32px;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E7EB;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
 }
@@ -387,7 +390,7 @@ button:focus-visible {
   flex: 1;
   text-align: center;
   font-weight: 500;
-  color: #0F1B2D;
+  color: var(--nav-text);
 }
 
 .chiffre + .chiffre {
@@ -403,7 +406,7 @@ button:focus-visible {
 
 .carte-avantage {
   padding: 24px;
-  background-color: #F7F8FA;
+  background-color: var(--card-bg);
   box-shadow: none;
 }
 
@@ -414,11 +417,13 @@ button:focus-visible {
 .carte-avantage h3 {
   font-size: 20px;
   margin-bottom: 8px;
+  color: var(--nav-text);
 }
 
 .carte-avantage p {
   color: #4B5563;
   line-height: 1.6;
+  color: var(--p-text);
 }
 
 .apropos-contenu {
@@ -435,10 +440,11 @@ button:focus-visible {
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: var(--nav-text);
 }
 
-.apropos-texte p {
-  color: #4B5563;
+.disc {
+  color: var(--p-text);
   line-height: 1.7;
   margin-bottom: 16px;
 }
@@ -455,13 +461,13 @@ button:focus-visible {
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E7EB;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-bg);
   border-radius: 12px;
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #0F1B2D;
+  color: var(--nav-text);
 }
 
 .apropos-image {
@@ -495,11 +501,12 @@ button:focus-visible {
 .programme-corps h3 {
   font-size: 20px;
   margin-bottom: 8px;
+  color: var(--nav-text);
 }
 
 .programme-corps p {
   font-size: 15px;
-  color: #4B5563;
+  color: var(--p-text);
 }
 
 .etiquette {
@@ -535,7 +542,7 @@ button:focus-visible {
   border-top: 1px solid #E5E7EB;
   font-size: 13px;
   font-weight: 600;
-  color: #0F1B2D;
+  color: var(--nav-text);
 }
 
 .programme-corps h3 + p {
@@ -560,6 +567,7 @@ button:focus-visible {
 
 .formule h4 {
   font-size: 20px;
+  color: var(--nav-text);
 }
 
 .prix {
@@ -806,4 +814,16 @@ button:focus-visible {
     padding: 30px;
   }
 
+}
+
+@media(prefers-color-scheme: dark){
+  :root{
+    --nav-bg: #031029;
+    --nav-text: white;
+    --p-text: rgb(151, 149, 149);
+    --bg-main: #031841;
+    --text-main: #949aa2;
+    --card-bg: #011c51;
+    --card-border: #00297a;
+}
 }
